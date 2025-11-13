@@ -1,0 +1,51 @@
+Les Bonus
+
+
+
+-----------PAGE DE CENTRES -> C'est une page facultative
+
+
+------PAGE DE DESCRİPTİON PRODUİT-------
+
+J’ai créé une animation qui fait grandir l’image quand on passe la souris dessus et la déplace au centre de l’écran. Pour que l’image ne se cache pas derrière les autres éléments, je lui ai donné un index de 999.
+L’animation marche quand  nous passons la souris et nous permet de offrir une éxperience interactif.
+
+
+-------LE PAGE AİDEZ NOUS--------
+
+
+J’ai créé des options de paiement  on peut choisir soit Mastercard, soit PayPal en cliquant  les labels. J'ai mis leur icones dans labels pour visuelle
+j’ai mis des inputs avec les meme names radio pour éviter de chosir plusieur input simultanement.
+ensuite j’ai ajouté des animations pour cacher et afficher les divs  en changeant  display:block;, display:none; ou bien leur opacité.
+Quand card_fake est coché, l’animation disappear commence sur .bancaire1 . Grâce au sélecteur de voisin (~), il est possible de provoquer les animations sur d’autres éléments qui sont situés après l’input.
+
+DONC
+
+les élément dans le formulaire disparaîssent.
+
+Le bouton ou formulaire paypal devient visible en augmentant son opacité.
+
+tout ca nous permet de créer une illusion visuelle  on dirait que le site est interactif.
+
+et aussi pour donner l'impression de pouvoir chosir le prix j'ai utilisé le  meme principe mais au lieu de cacher les choses quand input checkbox est coché
+les label changent leur couleur 
+
+derniérement j'ai utilisé la meme animation avec les @keyframes au lieux de checkbox cette fois ce qui provoquer l'animation était max-width parce que le place de h1 n'était pas  visuellement bien pour le mobil 
+
+
+
+
+
+---------LE PAGE DE PANİER------->
+
+encore une fois les inputs est les labels ont été utilisé, j'ai mis une poubelle pour les labels quand on click sur eux  input devient checked et il provoque l'animations venir et dissappear  les éléments et input deviennent invisible a traver display None
+et le <p> que j'ai caché avec opacité 0 devient visible cela nous permet de créer une illusion comme le produit a été vraiment supprimé du panier 
+
+--------Header-side----- 
+
+Le bare de navigation pour les écrant petits
+
+encore une fois il y a le meme principle.J'ai utilisé les label  et UN input. J'ai lié les label avec l'input et quand l'input est coché l'animation knock-knock commence
+et a traverse cette animation l'autre bare de navigation que j'ai caché en lui donnnant des valeur position absolute et left:-200rem devient visible parce que knock-knock lui transporte sa position par défaut
+
+

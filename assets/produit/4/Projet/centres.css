@@ -1,0 +1,109 @@
+:root {
+  --orangeK: #c6673b;
+  --jsp: #cca079;
+  --rouge: #a9324e;
+}
+.main-centres{
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+    
+    gap: 1rem;
+    h1{
+    margin: 4rem 0;
+    color: var(--orangeK);
+    font-size: clamp(0.1em, calc(1vw + 2em), 4em);
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+
+    
+}
+
+.centres{
+    margin-bottom: 4rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: gray 2px 2px 20px;
+        h2{
+            
+            color: var(--orangeK);
+            font-size: clamp(0.5em, calc(1vw + 2em), 2em);
+            text-shadow: 2px 1px 1px black;
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            padding:1.7rem 0;
+        }
+        
+        p{
+            font-style: italic;
+        }
+        img{
+            width: clamp(20rem,calc(30vw + 2rem ),100rem);
+            box-shadow: 2px 2px 5px rgb(101, 101, 101);
+            height: auto;
+        }
+        iframe{
+            width: clamp(10rem,calc(20vw + 2rem ),100rem);
+            box-shadow: 2px 2px 5px rgb(101, 101, 101);
+            height: clamp(10rem,calc(1vw + 1rem ),10rem);
+            margin-bottom: 2rem;
+        }
+    }
+    
+    @media screen and (max-width: 1120px) {
+        .main-centres{
+   
+    margin: 0rem;
+    gap: 1rem;
+    h1{
+    color: var(--orangeK);
+    font-size: clamp(0.1em, calc(1vw + 2em), 4em);
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+
+    
+}
+
+.centres{
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: gray 2px 2px 20px;
+        h2{
+            color: var(--orangeK);
+            font-size: clamp(0.5em, calc(1vw + 2em), 2em);
+            text-shadow: 2px 1px 1px black;
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            padding:1.7rem 0;
+        }
+        
+        p{
+            font-style: italic;
+        }
+        img{
+            width: clamp(20rem,calc(30vw + 2rem ),100rem);
+            box-shadow: 2px 2px 5px rgb(101, 101, 101);
+            height: auto;
+        }
+        iframe{
+            width: clamp(10rem,calc(20vw + 2rem ),100rem);
+            box-shadow: 2px 2px 5px rgb(101, 101, 101);
+            height: clamp(10rem,calc(1vw + 1rem ),10rem);
+            margin-bottom: 2rem;
+        }
+    }
+
+  
+}

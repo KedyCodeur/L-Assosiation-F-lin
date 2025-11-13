@@ -1,0 +1,33 @@
+main{
+   
+    height: clamp(10rem,calc(100vw + 20rem),90rem);
+  
+   
+}
+.navfooter{
+    z-index: 999;
+   a{
+    z-index: 999;
+   }
+   iframe{
+     z-index: 999;
+   }
+}
+
+@media screen and (max-width: 351px) {
+    
+    main{
+        margin-bottom:90rem;
+    }
+}
+
+@media (min-width:352px) and (max-width: 574px){
+    main{
+        margin-bottom: 70rem;
+    }
+}
+@media (min-width: 575px) and (max-width: 999px){
+    main{
+        margin-bottom: 90rem;
+    }
+}

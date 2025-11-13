@@ -1,0 +1,157 @@
+body {
+  background-color: papayawhip !important;
+  
+}
+
+.aidez_nous {
+  color: black;
+  p{
+    color: white;
+  }
+
+  i {
+    font-size: clamp(3rem, calc(3vw + 1rem), 10rem);
+    margin: 0 3rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-shadow: beige 2px 2px 2px;
+  }
+  .mastercard,
+  .card_fake {
+    display: none;
+  }
+}
+.prix_don {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-evenly;
+
+  input {
+    display: none;
+  }
+}
+.un:checked + .un {
+  background-color: rgba(239, 128, 2, 0.811);
+}
+
+.deux:checked + .deux {
+  background-color: rgba(239, 128, 2, 0.811);
+}
+
+.trois:checked + .trois {
+  background-color: rgba(239, 128, 2, 0.811);
+}
+.disappear {
+  opacity: 0;
+}
+
+.prix_don label {
+  width: clamp(4rem, calc(3vw + 1rem), 10rem);
+  height: clamp(3rem, calc(2vw + 1rem), 10rem);
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.main-contact {
+  background-color: rgba(177, 57, 9, 0.646) !important;
+}
+
+.fake {
+  position: relative;
+}
+.bouge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.fake_button {
+  width: clamp(20rem, calc(14vw + 5rem), 20rem);
+  height: clamp(1.5rem, calc(2vw + 1.5rem), 5rem);
+
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.721) !important;
+  font-weight: 600;
+  color: black;
+   a {
+    text-decoration: none;
+    color: black;
+  }
+  a:visited {
+    color: black;
+  }
+}
+button {
+  background-color: rgba(255, 255, 255, 0.721) !important;
+  font-weight: 600;
+  color: black;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:visited {
+    color: black;
+  }
+}
+
+.card_fake:checked ~ .bancaire1 {
+  animation: disappear 0s linear forwards;
+}
+.p{
+  display: none;
+}
+h1 {
+  padding-top: 2rem;
+  padding-bottom: 20px;
+  text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: clamp(1em, calc(1vw + 1.2em), 5em);
+  color: whitesmoke;
+}
+.card_fake:checked ~ .disappear {
+  animation: appear 0s linear forwards;
+}
+
+@keyframes disappear {
+  0% {
+  }
+
+  100% {
+    display: none;
+  }
+}
+@keyframes appear {
+  0% {
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .main-contact {
+    display: flex;
+
+    .gauche-contact {
+      order: 1;
+    }
+  }
+  .g{
+    display: none;
+  }
+  .p{
+    display: block;
+  }
+}
+

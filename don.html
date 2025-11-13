@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="author" content="Cem Sah Ozdemirel" />
+    <meta name="description" content="Page de Don de L'Assosiation Félin" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assosiation Félin</title>
+    <link rel="icon" href="/assets/logo-removebg-preview.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="don.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="fixer.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/96c0a924b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/96c0a924b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="margin"></div>
+
+    <!-- ~ -->
+    <header>
+      <nav class="navmenu">
+        <ul>
+          <li>
+            <a href="about.html" aria-label="les information de nous"
+              >Qui Sommes-Nous?</a
+            >
+          </li>
+          <li>
+            <a href="centres.html" aria-label="Nos centres et leur Locations"
+              >Centres</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" aria-label="Contactez-Nous">Support</a>
+          </li>
+          <li class="ntp">
+            <span class="logo"><a href="index.html"></a></span>
+          </li>
+          <li>
+            <a href="boutique.html" aria-label="Boutique solidaire "
+              >Boutique Solidaire</a
+            >
+          </li>
+          <li><a href="don.html" aria-label="Faire Un Don">Aidez-Nous</a></li>
+          <li class="panierv">
+            <a
+              class="panier"
+              href="panier.html"
+              aria-label="aller au panier"
+            ></a>
+            <label for="checker" style="z-index: 9999999999" class="nsvp"
+              ><i class="fa-solid fa-bars" style="font-size: 2rem"></i
+            ></label>
+            <input
+              style="display: none"
+              type="checkbox"
+              name="checker"
+              id="checker"
+              class="nsvp checker"
+            />
+            <div class="netouchepas"></div>
+            <div class="header-side">
+              <label for="checker" class="nsvp" style="margin: 3rem 0 2rem 0"
+                ><i class="fa-solid fa-xmark" style="font-size: 2rem"></i
+              ></label>
+              <a href="about.html" aria-label="les information de nous"
+                >Qui Sommes-Nous?</a
+              >
+              <a href="centres.html" aria-label="Nos centres et leur Locations"
+                >Centres</a
+              >
+              <a href="contact.html" aria-label="Contactez-Nous">Contact</a>
+              <a href="boutique.html" aria-label="Boutique solidaire "
+                >Boutique Solidaire</a
+              >
+              <a href="don.html" aria-label="Faire Un Don">Aidez-Nous</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container-contact">
+      <main class="main-contact">
+        <div class="gauche-contact">
+          <h1 class="g">Merci Pour Votre Don</h1>
+          <div class="droite-contact aidez_nous">
+            <form class="fake">
+              
+              <label for="card"
+                ><i class="fa-brands fa-cc-mastercard"></i
+              ></label>
+              <input type="radio" name="card" id="card" class="mastercard" />
+
+              <label for="mastercard"
+                ><i class="fa-brands fa-cc-paypal bouge"></i
+              ></label>
+              <input
+                type="radio"
+                name="card"
+                id="mastercard"
+                class="card_fake"
+              />
+              <div class="prix_don">
+                <input type="radio" name="prix" id="10€" class="un" />
+                <label class="un" for="10€">10€</label>
+
+                <input type="radio" name="prix" id="20€" class="un" />
+                <label class="un" for="20€">20€</label>
+
+                <input type="radio" name="prix" id="30€" class="trois" />
+                <label class="trois" for="30€">30€</label>
+              </div>
+              <div class="bancaire1">
+                <div>
+                  <label for="prenom" class="label-form">Numéro de carte</label>
+                  <input
+                    type="text"
+                    class="label-input"
+                    id="prenom"
+                    name="prenom"
+                    required
+                    placeholder="1234123412341234"
+                  />
+                </div>
+                <div>
+                  <label for="nom" class="label-form">Date d'expiration</label>
+                  <input
+                    type="text"
+                    class="label-input"
+                    id="nom"
+                    name="nom"
+                    required
+                    placeholder="MM/AA"
+                  />
+                </div>
+                <div>
+                  <label for="ccv" class="label-form">CCV</label>
+                  <input
+                    type="text"
+                    class="label-input"
+                    id="ccv"
+                    name="ccv"
+                    required
+                    placeholder="CVC"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="fake_button"
+                  style="cursor: pointer"
+                >
+                  Valider Mon Don
+                </button>
+              </div>
+
+              <button class="bouton-contact disappear">
+                Se connecter à Paypal
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="droite-contact box">
+          
+          <form>
+            <h1 class="p" style="align-self: center;">Merci Pour Votre Don</h1>
+            <div>
+              <div>
+                <label for="prenomm" class="label-form">Prénom</label>
+                <input
+                  type="text"
+                  class="label-input"
+                  id="prenomm"
+                  name="prenomm"
+                  required
+                  placeholder="*"
+                />
+              </div>
+              <div>
+                <label for="nomm" class="label-form">Nom</label>
+                <input
+                  type="text"
+                  class="label-input"
+                  id="nomm"
+                  name="nomm"
+                  required
+                  placeholder="*"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="mail" class="label-form">Email</label>
+              <input
+                type="email"
+                class="label-input"
+                id="mail"
+                name="mail"
+                required
+                placeholder="*"
+              />
+            </div>
+            <div>
+              <label for="tel" class="label-form">Numéro de Télephone</label>
+              <input
+                type="tel"
+                class="label-input"
+                id="tel"
+                name="tel"
+                required
+                placeholder="*"
+              />
+            </div>
+
+            <div>
+              <label for="address" class="label-form">L'Address</label>
+              <textarea
+                required
+                placeholder="*"
+                name="address"
+                id="address"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <nav class="navfooter">
+        <div class="haut">
+          <div class="gauche">
+            <h4>L'Assosiation Félin</h4>
+            <p style="text-align: justify">
+              L’Association Félin s’engage à protéger et à prendre soin des
+              chats dans le besoin. Nous leur offrons nourriture, abri et soins
+              de santé afin qu’ils puissent vivre dans les meilleures conditions
+              possibles. Grâce à la solidarité et à l’amour des animaux, nous
+              travaillons chaque jour pour leur offrir une vie meilleure.
+            </p>
+          </div>
+
+          <div class="milieu">
+            <h4>L'Information</h4>
+            <a href="about.html" aria-label="les information de nous"
+              >Savez plus de nous</a
+            >
+            <a href="centres.html" aria-label="Nos centres et leur Locations"
+              >Nos Centres D'aides</a
+            >
+            <a href="contact.html" aria-label="Contactez-Nous"
+              >Contactez-Nous</a
+            >
+            <a href="boutique.html" aria-label="Boutique-Solidare">Boutique Solidaire</a> 
+            <a href="mention.html">Mention Légales</a>
+            <a href="confidentialite.html">Politique de confidentialité</a>
+            <a href="confidentialite.html">Credits</a>
+          </div>
+
+          <div class="droite">
+            <h4>Contactez-Nous</h4>
+            <address>
+              <a href="mailto:cemsahozdemirel791@gmail.com"
+                >Mail:cemsahozdemirel791@gmail.com</a
+              >
+              <a href="tel:05335838357">tel:05335838357</a>
+              <iframe
+                class="iframe-main"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.961717652788!2d2.3071269124023814!3d48.83986890188969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f7c898ed09b%3A0x7a63d4e6d5968e33!2sEcole%20des%20m%C3%A9tiers%20de%20l&#39;informatique%20-%20SUPINFO%20Paris!5e0!3m2!1sen!2sfr!4v1757579398039!5m2!1sen!2sfr"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </address>
+          </div>
+        </div>
+        <div class="social">
+          <h4>Suivez-Nous</h4>
+          <div>
+            <a href="404.html" class="facebook"
+              ><img src="/assets/facebook-icon.jpg" alt="icon de facebook"
+            /></a>
+            <a href="404.html" class="instagram"
+              ><img src="/assets/icon-insta.webp" alt="icon de instagram"
+            /></a>
+            <a href="404.html" class="youtube"
+              ><img src="/assets/yt-icon.png" alt="icon de youtube"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>

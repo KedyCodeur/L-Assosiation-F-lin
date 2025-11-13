@@ -1,0 +1,24 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]   # sadece main'e push olunca çalışır
+
+permissions:
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Upload site files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "./"   # Tüm dosyaları yükler (isteğe göre klasör yolunu değiştirebilirsin)
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

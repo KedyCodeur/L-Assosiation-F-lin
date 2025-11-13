@@ -1,0 +1,10 @@
+
+
+- Toutes les images du site ontt un attribut ALT .
+- Les menus et liens sont accessibles via TAB.
+- Les boutons et formulaires sont utilisables sans souris.
+- Les couleurs choisies respectent un contraste suffisant entre texte et arrière-plan.
+- Le site utilise une hiérarchie logique (h1, h2, h3) pour organiser les contenus.
+- Les liens sont explicites (ex: "Accueil", "Panier", "Contact").
+- Les liens vers réseaux sociaux vont vers une page d’erreur 404.
+

@@ -1,0 +1,73 @@
+:root {
+  --orangeK: #c6673b;
+  --jsp: #cca079;
+  --rouge: #a9324e;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: clamp(1.2em, calc(1.5vw + 2.5em), 4em);
+    align-self: center;
+    margin:10rem 0 3rem 0 ;
+    color: var(--orangeK);
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+#boutique-prévisualition{
+    p{
+        font-size: clamp(1em, calc(0.3vw + 1.3em), 3em);
+    }
+}
+
+.container-column h3{
+    color: var(--orangeK);
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black; 
+    
+    
+}
+
+.mis-en-categorie a{
+         font-size: clamp(0.2em, calc(1vw + 0.6em), 3em);
+          padding: 1rem;
+          margin-bottom: 7rem;
+          
+        }       
+.mis-en-categorie{
+     a:nth-child(4)::after{
+        content: "🛏️";
+        
+    }
+}
+
+.boutique{
+    margin-bottom: 60rem;
+    margin-right: 0;
+
+}
+
+@media screen and ( max-width:996px){
+   .boutique{
+    margin-bottom: 0rem;
+    
+}
+
+.mis-en-categorie{
+    display: flex;
+    flex-direction: row;
+    
+    a{
+        margin-bottom: 2rem;
+    }
+}
+h1{
+    margin:3rem 0 1rem 0 ;
+}
+
+
+}
